@@ -2,7 +2,7 @@
 
 clear
 
-echo "EXECUTANDO MIGRATION"
+echo "PLUGIN MIGRATION"
 echo "---------------------------------------------------------------"
 
 echo "1) Informe nome do plugin: "
