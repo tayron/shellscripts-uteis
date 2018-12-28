@@ -1,9 +1,8 @@
 #!/bin/bash
 
 clear
-ss -nlt
+vagrant up
 
 echo
 read -s -n 1 -p "Press any key to continue . . ."
 echo
-
