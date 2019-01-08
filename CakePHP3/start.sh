@@ -1,8 +1,9 @@
 #!/bin/bash
 
-clear
+echo "1) Informe o endereço em que a aplicação irá executar: "
+read ENDERECO
 
-echo "1) Informe a porta para execução do seu projeto: "
+echo "2) Informe a porta para execução do seu projeto: "
 read PORTA
 
 clear
@@ -12,4 +13,4 @@ clear
 echo "SUBINDO A APLICAÇÃO: "
 echo "---------------------------------------------------------------"
 
-php bin/cake.php server -p $PORTA
+php bin/cake.php server -H $ENDERECO -p $PORTA
