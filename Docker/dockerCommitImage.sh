@@ -8,8 +8,8 @@ echo
 echo "Informe nome da nova imagem:versao"
 read NOME_IMAGEM
 
+echo
 docker commit $ID_IMAGEM $NOME_IMAGEM
-
 
 echo
 read -s -n 1 -p "Press any key to continue . . ."

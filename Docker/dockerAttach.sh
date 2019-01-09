@@ -4,9 +4,8 @@ clear
 echo "Informe ID do container:"
 read ID_CONTAINER
 
-
+echo
 docker attach $ID_CONTAINER
-
 
 echo
 read -s -n 1 -p "Press any key to continue . . ."
