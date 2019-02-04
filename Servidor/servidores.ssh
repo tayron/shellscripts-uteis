@@ -1,0 +1,53 @@
+#!/bin/bash
+
+Principal() {
+    echo "−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−"
+    echo "Acesso aos servidores"
+    echo "−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−"
+    echo "Opções:"
+    echo
+    echo "1. site1.com.br"
+    echo "2. site2.com.br"
+    echo "3. site3.com.br"
+    echo "4. Sair"
+    echo
+    echo "Qual servidor deseja acessar? "
+    read opcao
+
+    case $opcao in
+        1) AcessarSite1 ;;
+        2) AcessarSite2 ;;
+        3) AcessarSite3 ;;
+        4) exit ;;
+        *) "Opção desconhecida." ;  echo ;  Principal ;;
+        esac
+}
+
+AcessarSite1(){
+    clear
+    echo "implemente ssh root@site1.com.br "
+
+    echo
+    read -s -n 1 -p "Press any key to continue . . ."
+    echo
+}
+
+AcessarSite2(){
+    clear
+    echo "implemente ssh root@site1.com.br "
+
+    echo
+    read -s -n 1 -p "Press any key to continue . . ."
+    echo
+}
+
+AcessarSite3(){
+    clear
+    echo "implemente ssh root@site1.com.br "
+
+    echo
+    read -s -n 1 -p "Press any key to continue . . ."
+    echo
+}
+
+Principal
