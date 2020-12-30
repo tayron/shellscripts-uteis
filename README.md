@@ -5,7 +5,7 @@ Scripts shellscript uteis para desenvolvedores que trabalham com linux
 ```
 sudo apt autoremove -y && sudo apt autoclean && sudo apt clean
 ```
-Comando para executar um comendo no terminal em loop
+## Comando para executar um comendo no terminal em loop
 ```
 while true; do netstat -nat; sleep 1; clear; done;
 ```
