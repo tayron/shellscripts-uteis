@@ -21,7 +21,11 @@ while true; do netstat -nat; sleep 1; clear; done;
  ```
  
  Exemplo:
- ```sh
+  ```sh
+ sudo lsof -i tcp:3000
+ ```
+ Exemplo de processo rodando
+ ```sh 
  COMMAND   PID   USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
  main    92389 tayron    3u  IPv6 450393      0t0  TCP *:3000 (LISTEN)
  ```
@@ -31,7 +35,7 @@ while true; do netstat -nat; sleep 1; clear; done;
 sudo kill -9 PID 
  ```
 
- Exemplo:
+ Exemplo do comando para encerrar o processo encontrado:
  ```sh
- sudo lsof -i tcp:3000
+ sudo kill -9 92389
  ```
