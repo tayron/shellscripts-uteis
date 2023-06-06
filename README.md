@@ -14,6 +14,11 @@ while true; do netstat -nat; sleep 1; clear; done;
 ```sh
  grep -R "precisa ser um numero" ./
  ```
+ 
+ ## Comando para criar link simbólico
+ ```sh
+ ln -s /user/local/project/web /project
+ ```
 
  ## Comando para analisar o que está rodando em uma determinada porta
  ```sh
