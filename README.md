@@ -44,3 +44,9 @@ sudo kill -9 PID
  ```sh
  sudo kill -9 92389
  ```
+ 
+ Exemplo de ferramenta que fica verificando se ouve alteração em arquivo para executar alguma ação, como executar teste unitário sempre que um arquivo for criado
+ ```sh
+ sudo apt install inotify-tools
+ while true; do inotifywait -qq -r -e create,close_write,modify,move,delete ./ && go test ./...; done;
+```
