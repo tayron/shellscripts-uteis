@@ -50,3 +50,8 @@ sudo kill -9 PID
  sudo apt install inotify-tools
  while true; do inotifywait -qq -r -e create,close_write,modify,move,delete ./ && go test ./...; done;
 ```
+
+Gerar chave ssh personalizada
+```sh
+ssh-keygen -f ~/.ssh/nome-arquivo -t rsa -C "tayron@empresa.com.br"
+```
