@@ -19,6 +19,10 @@ while true; do netstat -nat; sleep 1; clear; done;
  ```sh
  ln -s /user/local/project/web /project
  ```
+ ## Comando pra mostrar qual programa está ocupando uma porta
+ ```sh
+sudo fuser -v 8080/tcp
+```
 
  ## Comando para analisar o que está rodando em uma determinada porta
  ```sh
@@ -27,12 +31,12 @@ while true; do netstat -nat; sleep 1; clear; done;
  
  Exemplo:
   ```sh
- sudo lsof -i tcp:3000
+ sudo lsof -i tcp:8080
  ```
  Exemplo de processo rodando
  ```sh 
  COMMAND   PID   USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
- main    92389 tayron    3u  IPv6 450393      0t0  TCP *:3000 (LISTEN)
+ main    92389 tayron    3u  IPv6 450393      0t0  TCP *:8080 (LISTEN)
  ```
 
  ## Comando para encerrar a aplicaçaõ rodando em uma determinada porta atrás do PID
